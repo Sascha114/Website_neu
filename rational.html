@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rational</title>
+    <link rel="stylesheet" href="rational.css">
+    <script src="rational.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="../startseite/index.html"><img src="../images/logo-neu.png" class="image"></a>
+        <h3 id="header-headline">Lerma - Die Lernplattform für Mathematik</h3>
+    </header>
+
+    <div class="definition">
+        <h3 class="headline-main">Potenzieren mit rationalen Zahlen</h3>
+
+            <p>
+                Beim Potenzieren mit rationalen Zahlen geht es darum, 
+                eine Basis (also eine Zahl, die potenzeirt wird) und 
+                einen Exponenten (die "Hochzahl") zu haben, der eine rationale
+                Zahl ist, also einen Bruch oder eine Dezimalzahl darstellt.
+            </p>
+
+            <h3 class="headline">Beispiele: </h3>
+            <p>
+                3<sup>3</sup>  &nbsp;= &nbsp; 3&nbsp;*&nbsp;3&nbsp;*&nbsp;3&nbsp; = 27 <br>
+                5<sup>2</sup>  &nbsp;=&nbsp;5&nbsp;*&nbsp;2&nbsp;=&nbsp;25<br>
+                10<sup>3</sup> &nbsp;=&nbsp;10&nbsp;*&nbsp;10&nbsp;*&nbsp;10&nbsp;=&nbsp;1000
+                <br><br>
+                <p>Beim Potenzieren mit Brüchen oder negativen zahlen muss man folgende Regeln beachten:</p>
+            </p>
+
+            <h4>Potenzieren mit Brüchen: </h4><br>
+            <p style="margin-top: -20px;">
+                3<sup>&frac12;</sup> &nbsp;=&nbsp;&#8730;3<br>
+                5<sup>&frac35;</sup> &nbsp;=&nbsp;<sup>5</sup>√5<sup>3</sup><br>
+                10<sup>&frac16;</sup>&nbsp;=&nbsp;<sup>6</sup>√10<br><br>
+            </p>
+
+            <h4 class="headline">Potenzeiren mit negativen Zahlen:</h4>
+            <p>
+                Für Alle Zahlen a <span style="font-weight: 400;">∈ &#8477;</span>, a ≠ 0 und n <span style="font-weight: 400;">∈ &#8477;</span><br>
+                gilt:&nbsp; a<sup>-n</sup>&nbsp;=&nbsp;<sup>1</sup>&frasl;a<sup>n</sup><br><br>
+                
+                3<sup>-2</sup>&nbsp;=&nbsp;<sup>1</sup>&frasl;<sub>3<sup>2</sup></sub><br>
+                10<sup>-5</sup>&nbsp;=&nbsp;<sup>1</sup>&frasl;<sub>10<sup>5</sup></sub><br>
+                5<sup>-1&frasl;<sub>2</sub></sup>&nbsp;=&nbsp;<sup>1</sup>&frasl;<sub>√5</sub><br><br>  
+                </p>
+
+            <h4 class="headline">Sonderfälle</h4>
+            <p>
+                1<sup>n</sup> = 1 -> egal welcher Exponent, die Basis bleibt immer 1<br><br>
+                0<sup>n</sup> = 0 -> egal welcher Exponent, die Basis bleibt immer 0<br><br>
+                a<sup>0</sup> = 1, a ≠ 0  -> a hoch 0 ist immer 1<br>
+                </p>
+            
+            
+                <form action="potenz.js">
+                    <h3 style="color: #6495ED; font-size: 25px; font-weight: 700; margin-top: 40px;">Übung</h3>
+                    
+                    <div id="Übung" style="font-size: 20px;"> 
+        
+                            <div style="margin-bottom: 20px;">
+                                Berechne: (2&frasl;3)<sup>3</sup>
+                            </div>
+                            <div id="status">
+                                Die Antwort ist richtig
+                            </div>
+                            
+         
+                            <div>
+                                <input type="radio" id="checkbox1" name="answer">
+                                <label for="checkbox1" style="font-size: larger;">6&frasl;9</label>
+                            </div>
+        
+                            <div>
+                                <input type="radio" id="checkbox2" name="answer">
+                                <label for="checkbox2" style="font-size: larger;">8&frasl;27</label>
+                            </div>
+        
+                            <div>
+                                <input type="radio" id="checkbox3" name="answer">
+                                <label for="checkbox3" style="font-size: larger;">8&frasl;9</label>
+                            </div>
+        
+                            <div>
+                                <input type="radio" id="checkbox4" name="answer">
+                                <label for="checkbox4" style="font-size: larger;">6&frasl;27</label>
+                            </div>
+                        
+        
+                    <div class="buttons">
+                        <button type="button" class="button" onclick="überprüfen()">überprüfen</button>
+                        <button type="reset" class="button" onclick="zurücksetzten()">Zurücksetzten</button>
+                        <button type="button" class="button" id="button_next" onclick="next()">Nächste Aufgabe</button>
+                    </div>
+                    
+                </div>
+        
+        
+                    <div id="Übung2">
+        
+                        <div> 
+                            Welche Aussage ist falsch? 
+                        </div>
+        
+                        <div id="status2">Die Antwort ist richtig</div>
+        
+                        <div>
+                            <input type="radio" id="checkbox5" name="answer">
+                            <label for ="checkbox5" >(-2)<sup>4</sup> =  16</label>
+                        </div>
+        
+                        <div>
+                            <input type="radio" id="checkbox6" name="answer">
+                            <label for ="checkbox6">2<sup>-2</sup> = 1&frasl;4</label>
+                        </div>
+        
+                        <div>
+                            <input type="radio" id="checkbox7" name="answer">
+                            <label for ="checkbox7" >(-3)<sup>3</sup> = -27</label>
+                        </div>
+                        
+                        <div>
+                            <input type="radio" id="checkbox8" name="answer">
+                            <label for ="checkbox8" >3<sup>-1</sup> = -3</label>
+                        </div>
+        
+                        <div id="buttons2">
+                            <button type="button" class="button" onclick ="überprüfen2()">Überprüfen</button>
+                            <button type="reset" class="button" onclick ="">Zurücksetzen</button>
+                            <button type="button" class="button" id="button_next2" onclick ="next2()">Nächste Aufgabe</button>
+        
+                        </div>
+                    </div>
+        
+                    <div class="arrow-left" onclick="window.location.href = '../startseite/menu.html'">
+                        <img src="../images/arrow-long-left.svg"  > <p>Zurück zur Auswahl</p>
+                    </div>
+
+                    <div class="rational">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jpm5cNIIZLA?si=6XQ80keezMm25BFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="iframe"></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/44ANi3KvL7I?si=SHLqwJ9vSwfIBfnu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="iframe"></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1TUvO_RNDWY?si=UjPWESRhtr8r6Rtq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="iframe"></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8e4tovD_Hb0?si=HRxi8oLKPGq9lr0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="iframe"></iframe>
+                    </div>
+            
+                   
+                </form>
+        
+    </div>
+    
+</body>
+</html>

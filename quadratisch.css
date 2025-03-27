@@ -1,0 +1,161 @@
+@media (min-width: 360px) {
+    .header {
+        display: flex;
+        font-weight: 600;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .header {
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    #image-parabel  {
+        height: 200px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+
+
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    border-bottom-style: solid;
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+    column-gap: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    overflow-x: none;
+}
+
+.image {
+    height: 40px;
+    width: 60px;
+    flex-shrink: 0;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.definition {
+    max-width: 1500px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #6495ED;
+    height: 40px;
+    width: 110px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.arrow-left {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+#button-container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+
+.button:hover {
+    cursor: pointer;
+}
+
+
+#button1 {
+    display: none;
+}
+
+
+.definition #image-parabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline {
+    font-size: 24px;
+    color: #6495ED;
+}
+
+#status  {
+    display: none;
+    background-color: forestgreen;
+    color: white;
+    text-align: center;
+    font-family: 'inter';
+    padding: 5px 5px 5px 5px;
+    border-radius:7px ;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+#status2 {
+    display: none;
+    background-color: forestgreen;
+    color: white;
+    text-align: center;
+    font-family: 'inter';
+    padding: 5px 5px 5px 5px;
+    border-radius:7px ;
+    width: 200px;
+    margin-bottom: 10px;
+
+}
+
+#work2 {
+    display: none;
+}
+
+
+p {
+    font-weight: 400;
+}
+
+body .definition {
+    max-width: 700px;
+    padding: 20px;
+    margin: auto ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#iframe {
+    display: flex;
+    max-width: 700px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}

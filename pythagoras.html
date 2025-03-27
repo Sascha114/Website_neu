@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pythagoras</title>
+    <link rel ="stylesheet" href="pythagoras.css">
+    <script src="pythagoras.js"></script>
+</head>
+<body >
+
+    <header class="header">
+        <a href="../startseite/index.html"><img src="../images/logo-neu.png" class="image"></a>
+        <h3>Lerma - Die Lernplattform für Mathematik</h3>
+    </header>
+
+    <div class="definition">    
+        
+        <h3 class="headline-main">Satz des Pythagoras</h3>
+
+        <p>
+            Wenn das Dreieck abc rechtwinklig ist, dann ist der Flächeninhalt der Hypothenusenseite gleich der Summe der Flächeninhalte 
+            der beiden Kathetenquadrate. Die Seite a und b sind die Katheten und die Seite c ist die Hypothenuse.
+        </p>
+        <img src="../images/01-Rechtwinkliges_Dreieck-Pythagoras.svg.png" id="img-dreieck">
+
+        <p>
+            Das heißt, man kann eine fehlende Seite eines rechtwinkligen Dreiecks berechnen. die Formel lautet<br>
+            a<sup>2</sup>&nbsp;+&nbsp;b<sup>2</sup>&nbsp;=&nbsp;c<sup>2</sup>,&nbsp;anschließend zieht man die Wurzel, um die Seite zu berechnen.<br>
+            Die Formel kann umgestellt werden, sodass man nicht nur die Hypothenuse berechnen kann.<br>
+            Für die Seite a gilt: a<sup>2</sup>&nbsp;=&nbsp;c<sup>2</sup>&nbsp;-&nbsp;b<sup>2</sup><br>
+            Für die Seite b gilt: b<sup>2</sup>&nbsp;=&nbsp;c<sup>2</sup>&nbsp;-&nbsp;a<sup>2</sup>
+            </p>
+
+        <h4>Beispiel</h4>
+        <img src="../images/dreieck.png" alt="dreieck" id="img-dreieck">
+        <p>
+            Angenommen, die Seite a ist 3 und die Seite b ist 4. Um die Hypothenuse zu berechnen, wenden wendet man den Satz des Pythagoras an.<br>
+            Die Formel lautet a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>.<br>
+            Nun setzen wir die Werte ein: 3<sup>2</sup> + 4<sup>2</sup> = c<sup>2</sup>.&nbsp;|&nbsp;3<sup>2</sup>; 4<sup>2</sup> <br>
+            9 + 16 = c<sup>2</sup>&nbsp;|&nbsp;9 + 16<br>
+            25 = c<sup>2</sup>&nbsp;|&nbsp;Wurzel ziehen<br>
+            c = 5, also ist die Hypothenuse 5.
+        </p>
+    
+        <form action="pythagoras.js">
+            <div id="work1">
+    
+                <div style="color: #6495ED; font-size: 23px; margin-bottom: 10px; margin-top: 40px;">Übung:</div>
+    
+                <div>Aufgabe 1: Berechne die Hypothenuse <br>
+                    Ein rechtwinkliges Dreieck hat die Kathetenlängen a=6cm und b=8cm.
+                    Berechne die Länge der Hypotenuse.<br><br>
+                    Die Länge der Hypothenuse beträgt</div>
+    
+                <div id="status"></div>
+    
+            <div>
+                <input type="radio" id="checkbox1" name="answer">
+                <label for="checkbox1">12cm</label>
+            </div> 
+    
+            <div>
+                <input type="radio" id="checkbox2" name="answer">
+                <label for="checkbox2">10cm</label>
+            </div>
+    
+            <div>
+                <input type="radio" id="checkbox3" name="answer">
+                <label for="checkbox3">9cm</label>
+            </div>
+    
+            <div>
+                <input type="radio" id="checkbox4" name="answer">
+                <label for="checkbox4">14cm</label>
+            </div>
+    
+            <div class="button-container">
+                <button type="button" onclick="überprüfen1()" class="buttons">Überprüfen</button>
+                <button type="reset" class="buttons" >Zurücksetzen</button>
+                <button type="button" id="button_next_1" onclick="next1()" class="buttons" >Nächste Aufgabe</button>
+            </div>
+    
+            </div>
+            <div id="work2">
+    
+                <div style="color: #6495ED; font-size: 23px; margin-bottom: 10px; margin-top: 40px;">Übung:</div>
+    
+                <div>Aufgabe 2: Berechne die Kathete<br>
+                    Die Hypotenuse eines rechtwinkligen Dreiecks ist c = 13cm, und eine Kathete hat die Länge <br>
+                    a = 5cm<br><br>
+                    Die Länge der Kathete beträgt</div>
+    
+                <div id="status2"></div>
+    
+            <div>
+                <input type="radio" id="checkbox5" name="answer">
+                <label for="checkbox1">9cm</label>
+            </div> 
+    
+            <div>
+                <input type="radio" id="checkbox6" name="answer">
+                <label for="checkbox2">14cm</label>
+            </div>
+    
+            <div>
+                <input type="radio" id="checkbox7" name="answer">
+                <label for="checkbox3">12cm</label>
+            </div>
+    
+            <div>
+                <input type="radio" id="checkbox8" name="answer">
+                <label for="checkbox4">10cm</label>
+            </div>
+    
+            <div class="button-container">
+                <button type="button" onclick="überprüfen2()" class="buttons">Überprüfen</button>
+                <button type="reset" onclick="reset()" class="buttons">Zurücksetzen</button>
+                <button type="button" id="button_next_1" onclick="next2()" class="buttons" id="button_next_2">Nächste Aufgabe</button>
+            </div>
+    
+            </div>
+    
+            <div class="arrow-left" onclick="window.location.href = '../startseite/menu.html'">
+                <img src="../images/arrow-long-left.svg"  > <p>Zurück zur Auswahl</p>
+            </div>
+
+            <div class="pythagoras-video"> 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FECtVbC-mgk?si=5j5on0B2TI2CoRsW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="iframe"></iframe>
+            </div>
+
+    
+            </form>
+    
+
+    
+</div>
+
+</body>
+</html>

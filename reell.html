@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reell</title>
+    <link rel="stylesheet" href="reell.css">
+    <script src="reell.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="../startseite/index.html"><img src="../images/logo-neu.png" class="image"></a>
+        <h3 id="header-headline">Lerma - Die Lernplattform für Mathematik</h3>
+    </header>
+
+
+    <div class="definition">
+        <h3 class="headline-main" > Was sind reelle Zahlen?</h3>
+
+        
+
+        <p>
+            Reele zahlen sind alle zahlen, die man auf dem zahlenstrahl darstellen kann - 
+            also alle Zahlen, die wir uns vorstellen können, wenn wir "weiter" zählen und zwischen 
+            den ganzen Zahlen immer feinere Teilungen machen. Also ist jede rationale und irrationale Zahl eine reele Zahl
+        </p>
+
+        <h4 style="margin-bottom: -24px;">Kurze Definition:</h4>
+            
+        
+
+        <p>
+            Das Symbol für reele zahlen ist <span style="font-size: 20px; font-weight: 400; color: red;">&#8477;.</span> Die menge der reelen Zahlen enthält 
+            rationale- und irrationale Zahlen. Das sind zum Beispiel<br> -3; &pi;; &frac12;;<span style="font-size: small;"><sup>-3</sup>&frasl;<sub>4</sub></span>
+        </p>
+        <img src="../images/Zahlengerade_-Die-Menge-der-reellen-Zahlen-besteht-aus-den-irrationalen-Zahlen-blau-und-den-rationalen-Zahlen-rot.-Die-ganz-Zahlen-schwarz-gehören-auch-zu-den-rationalen-Zahlen.-1024x576.png">
+
+        <h3 class="headline">Rechnen mit Wurzeln</h3>
+            
+
+        <p>
+            Wuzeln bestehen aus aus einer <u>positiven Zahl</u> und dem <u>Wurzelzeichen.</u> Sie sind also die <u>Umkehrung</u> einer Potenz, 
+            also ist die Wuzel einer Zahl die ursprünglich potenzierte Zahl.<br>
+            Beispiel:&nbsp;&nbsp;√9 = 3;&nbsp;3<sup>2</sup> = 3*3 = 9
+            Es gibt viele veschiedene Wuzeln, die meist genutzten sind quadratische und Kubikwurzeln.<br>
+        </p>
+        <img src="../images/radikand.png" id="radikand">
+
+        <h3 class="headline-main">Wurzelgesetze</h3>
+
+            
+        <u><h4 style="color: black;">1. Wurzelgesetz: Produktion von Wurzeln</h4></u>
+        <img src="../images/1wurzelgesetz.png" style="width: 200px; height: 20px;">
+        <p>Man Multipliziert Wurzeln mit dem gleichen Wurzelexponenten, indem du die radikanden unter einer Wurzel schreibst</p>
+
+        <u><h4 style="color: black;">2. Wurzelgesetz: Quotient von Wurzeln</h4></u>
+        <img src="../images/2wurzelgesetz.png" style="width: 200px; height: 20px;"> 
+        <p>dividiert man Wurzeln mit dem gleichen Wurzelexponenten, indem man die Radikanden als Bruch
+            unter eine wuzel schreibst.</p>
+
+        <u ><h4 style="color: black;">3. Wurzelgesetz: Zwei Wurzeln</h4></u>
+        <img src="../images/3wurzelgesetz.png" style="width: 150px; height: 30px;">
+        <p>Hast du zwei Wurzeln gegeben, dann nimmst du die Wurzelexponenten der beiden Wurzeln miteinander mal. 
+            So fasst du dei beiden Wurzel zusammen</p>
+
+        <u><h4 style="color: black;">4. Wurzelgesetz: Wurzeln potenzieren</h4></u>
+        <img src="../images/4wurzelgesetz.png" style="width: 190px; height: 25px;">
+        <p>Wird deine gesamte Wurzel potenziert, dann schreibst du die Potenz unter die Wurzel. So benötigst du die Klammern nicht mehr.</p>
+
+        <u><h4 style="color: black;">5. Wurzelgesetz: Potenzen unter der Wurzel</h4></u>
+        <img src="../images/5wurzelgesetz.png" style="width: 100px; height: 25px;">
+        <p>Gibt es eine Potenz unter der Wurzel, dann kann man diese einfach auslösen: Schreibt man dafür eine Potenz
+            in Form eines Bruches hinter die Zahl. Die bisherige Potenz unter dem Bruch wird zum Zähler der neuen Potenz. 
+            Der Wurzelexponent wird der Nenner der Potenz.</p>
+
+        <form> 
+            <h3 class="headline-main">Übung</h3>
+
+            <div style="margin-top: 40px;" id="work1">
+
+                <div style="margin-bottom: 20px;">
+                    Aufgabe 1: Berechne <span style="font-size: larger;">√</span>5 * <span style="font-size: larger;">√</span>20
+                </div>
+
+                <div id="status"></div>
+
+
+                <div>
+                    <input type="radio" id="checkbox1" name="answer">
+                    <label for="checkbox1" id="checkbox1_label">√25</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="checkbox2" name="answer">
+                    <label for="checkbox2" id="checkbox2_label">5</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="checkbox3" name="answer">
+                    <label for="checkbox3" id="checkbox3_label">100</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="checkbox4" name="answer">
+                    <label for="checkbox4" id="checkbox4_label">10</label>
+                </div>
+
+                <div class="button-container">
+                    <button type="button" onclick="überprüfen()" class="button">Überprüfen</button>
+                    <button type="reset" onclick="zurucksetzen()" class="button" >zurücksetzten</button>
+                    <button type="button" onclick="next()" class="button" id="button_next">Nächste Aufgabe</button>
+                </div>
+
+            </div>
+                
+            
+            <div id="work2">
+
+                    <div style>Aufgabe 2: Berechne den Quotienten der Wurzel √50 : √2 </div>
+
+                    <div  id="status2"></div>
+
+                    <div >
+                        <input type="radio" id="checkbox5" name="answer">
+                        <label for ="checkbox5">25</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="checkbox6" name="answer">
+                        <label for ="checkbox6">5</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="checkbox7" name="answer">
+                        <label for ="checkbox7">√10</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="checkbox8" name="answer">
+                        <label for ="checkbox8">√48</label>
+                    </div>
+
+                    <div class="button-container">
+                        <button type="button" onclick="überprüfen2()" class="button">Überprüfen</button>
+                        <button type="reset" onclick="reset()" class="button">Zurücksetzen</button>
+                        <button type="button" onclick="next2()" class="button" id="button_next_2">Nächste Aufgabe</button>
+                    </div>
+
+                </div>
+
+                <div id="work3">
+                    <div>Aufgabe 3: Welche Zahl ist <u>keine</u> reelle Zahl?</div>
+
+                    <div id="status3"></div>
+
+                    <div>
+                        <input type="radio" id="checkbox9" name="answer">
+                        <label for="checkbox9">3</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="checkbox10" name="answer">
+                        <label for="checkbox10">-1&frasl;2</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="checkbox11" name="answer">
+                        <label for="checkbox11">√5</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="checkbox12" name="answer">
+                        <label for="checkbox12">√-1</label>
+                    </div>
+
+                    <div class="button-container">
+                        <button type="button" onclick="überprüfen3()" class="button">Überprüfen</button>
+                        <button type="reset" onclick="" class="button">Zurücksetzen</button>
+
+                    </div>
+                </div>
+
+            <div class="arrow-left" onclick="window.location.href = '../startseite/menu.html'">
+                <img src="../images/arrow-long-left.svg"  > <p>Zurück zur Auswahl</p>
+            </div>
+
+            <div class="reell-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_p92I_mRtpo?si=RRPXYFS_vQWEt-1F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="iframe"></iframe>
+            </div>
+            
+        </form>
+        
+    </div>
+
+    
+</body>
+</html>

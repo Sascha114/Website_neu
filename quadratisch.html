@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quadratisch</title>
+    <link rel="stylesheet" href="quadratisch.css">
+    <script src="quadratisch.js"></script>
+</head>
+<body style="font-family: sans-serif;">
+
+    <header class="header">
+        <a href="../startseite/index.html"><img src="../images/logo-neu.png" class="image"></a>
+        <h3>Lerma - Die Lernplattform für Mathematik</h3>
+
+    </header>
+
+        <div class="definition">
+            <h3 class="headline"><u><u>Was sind quadratische Funktionen<br> und wie erkennt man diese?</u></u></h3><br>
+
+            <p>
+                Eine quadratische Funktion ist an dem <u>x<sup>2</sup></u> in der Funktionsgleichung zu erkennen. 
+                Der Graph einer quadratischen Funktion ist <u>immer</u>  <u>Parabel</u>.
+                <br>
+                <br>
+                Die einfachste Parabel ist die <u>Normalparabel</u> mit f(x) = x<sup>2</sup>. Ihr <u style="color: #6495ED;">Scheitelpunkt</u> liegt
+                im Koordinatenursprung - also  bei <strong style="color: #6495ED;">(0|0)</strong>. Das ist gleichzeitig auch ihr <u>tiefster Punkt</u>
+            </p>
+
+            <div id="image-parabel">
+                <img src="../images/Unbenannt.png" >
+            </div><br><br>
+
+            <p>
+                Die Funktion kann man verschieben. Um sie entlang der y-Achse zu verschieben, muss man am Ende der Funktionsgleichung + eine Zahl rechnen.<br>
+                Beispiel: f(x) = x<sup>2</sup><strong style="color: red;">+</strong> 2, dabei wird der Graph um <strong style="color: red;">2</strong> Einheiten nach oben verschoben<br>
+                <br>
+                Um die Funktion entlang der x-Achse zu verschieben, muss man die Gleichung in eine Klammen setzen und dan beliebigen Wert einsetzen.<br>
+                <br>
+                Beispiel: f(x) = <span style="color: red;">(</span>x+<strong style="color: rgb(132, 0, 255);">3</strong><span style="color: red;">)</span><sup>2</sup><br>
+                <br>
+                Dabei muss man beachten, dass die Gleichung nach links verschoben wird, wenn man <span style="color: red;">+</span> rechnet, bei <span style="color: red;">-</span> ist es umgekehrt.
+                <br><br>
+                Die Normalparabel wird verstaucht, wenn vor dem x<sup>2</sup> ein Faktor steht (außer 1). Ist die Zahl kleiner als 1, wird die Parabel gestreckt, ist sie größer als 1, wird sie gestaucht.	
+                <br><br><br>             
+            </p>
+
+            <form action="quadratisch.js">
+                <div style="font-family: 'inter';">
+                        
+                    <div id="work1">     
+    
+                            <div style="color: #6495ED; font-size: 23px; margin-bottom: 10px;">Übung:</div>
+                            
+                            <div>    
+                            Aufgabe 1: welche Formel ist eine quadratische Funktion?        
+                            </div>
+                            
+                            <div style="margin-top: 2px;" id="status">
+                            </div>
+                            
+                            <div id="aufgaben1">
+                                <div>
+                                    <input type="radio" id="checkbox1" name="answer">   
+                                    <label for="answer_1">f(x) = x<sup>2</sup></label>
+                                </div>
+                                
+                                <div>
+                                    <input type="radio" id="checkbox2" name="answer">           
+                                    <label for="answer_2">f(x) = x * 2</label>
+                                </div>
+                                
+                                <div>
+                                    <input type="radio" id="checkbox3" name="answer">
+                                    <label for="answer_3">f(x) = x<sup>3</sup></label>
+                                </div>
+    
+                                <div>
+                                    <input type="radio" id="checkbox4" name="answer">
+                                    <label for="answer_4">f(x) = x + 2</label>
+                                </div>
+                            
+                                </div>
+    
+    
+    
+                            <div id="button-container">
+                                <button class = "button" id="überprüfen_button_1" type="button" onclick="überprüfen()">Überprüfen</button>
+                                <button class = "button" type="reset" onclick="zurücksetzten()">Zurücksetzten</button>
+                                <button class = "button" id="button1" type="button" onclick="next()">Nächste Aufgabe</button>
+                            </div>
+            
+                        </div>
+    
+                        
+    
+                        <div id="work2">
+                            <div style="color: #6495ED; font-size: 23px; margin-bottom: 10px;">Übung:</div>
+    
+                                <div style="font-family: 'inter'; font-size: 20px; margin-bottom: 10px;"  >
+                                    Aufgabe 2: welche Parabel wird nach rechts verschoben?
+                                </div>
+                                
+                                <div style="margin-top: 2px;" id="status2">
+                                </div>
+        
+                                <div>
+                                    <div>
+                                        <input type="radio" id="checkbox5" name="answer1">
+                                        <label for="answer1">f(x) = x<sup>2</sup> + 2</label><br>
+                                    </div>
+    
+                                    <div>
+                                        <input type="radio" id="checkbox6" name="answer1">
+                                        <label for="answer1">f(x) = x<sup>2</sup> - 2</label><br>
+                                    </div>
+    
+                                    <div>
+                                        <input type="radio" id="checkbox7" name="answer1">
+                                        <label for ="answer1">f(x) = (x - 2)<sup>2</sup></label><br>
+                                    </div>
+    
+                                    <div>
+                                        <input type="radio" id="checkbox8" name="answer1">
+                                        <label for="answer1">f(x) = (x + 2)<sup>2</sup></label>
+                                    </div>
+    
+                                    
+                                </div>
+    
+                                    <div>
+                                        <button class="button" id="überprüfen_button_2" type="button" onclick="überprüfen1()">Überprüfen</button>
+                                        <button class="button"  type="reset" onclick="zurücksetzten1()">Zurücksetzen</button>
+                                    </div>
+                                
+                        </div>
+                        
+                </div>
+
+                <div class="arrow-left" onclick="window.location.href = '../startseite/menu.html'">
+                    <img src="../images/arrow-long-left.svg"  > <p>Zurück zur Auswahl</p>
+                </div>
+    
+            </form> 
+    
+            <iframe  id="iframe" src="https://www.youtube.com/embed/PrMmIPs7dKw?si=2_F5wlv3tlkZFY66" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+    
+</body>
+</html>
